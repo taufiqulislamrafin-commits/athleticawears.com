@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athletica Wears | Official Jersey Store</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #000; color: white; }
+        .rounded-nike { border-radius: 24px; }
+        .nav-blur { backdrop-filter: blur(10px); background: rgba(0,0,0,0.8); }
+    </style>
+</head>
+<body>
+
+    <div class="bg-[#111] py-2 px-6 md:px-12 flex justify-end items-center text-[10px] font-medium text-gray-400">
+        <div class="flex space-x-4">
+            <a href="#" class="hover:text-white">Find a Store</a>
+            <span>|</span>
+            <a href="#" class="hover:text-white">Help</a>
+            <span>|</span>
+            <a href="#" class="hover:text-white">Sign In</a>
+        </div>
+    </div>
+
+    <nav class="flex justify-between items-center px-6 md:px-12 py-4 sticky top-0 nav-blur z-50 border-b border-gray-800">
+        <div class="flex items-center">
+            <div class="font-black text-xl tracking-tighter uppercase italic">
+                Athletica <span class="text-yellow-500">Wears</span>
+            </div>
+        </div>
+        
+        <div class="hidden md:flex space-x-8 font-bold text-sm uppercase tracking-widest">
+            <a href="#home" class="hover:text-gray-400 transition">New Kits</a>
+            <a href="#teams" class="hover:text-gray-400 transition">Clubs</a>
+            <a href="#national" class="hover:text-gray-400 transition">National</a>
+            <a href="#sale" class="text-red-500">Sale</a>
+        </div>
+
+        <div class="flex items-center space-x-6">
+            <div class="relative bg-[#1a1a1a] rounded-full px-4 py-2 hidden sm:flex items-center border border-gray-700">
+                <i class="fa-solid fa-magnifying-glass text-gray-500 mr-2"></i>
+                <input type="text" placeholder="Search Kits" class="bg-transparent outline-none text-xs text-white">
+            </div>
+            <button onclick="alert('Wishlist is empty')" class="hover:scale-110 transition"><i class="fa-regular fa-heart text-xl"></i></button>
+            <button onclick="alert('Cart: 0 items')" class="hover:scale-110 transition"><i class="fa-solid fa-bag-shopping text-xl"></i></button>
+        </div>
+    </nav>
+
+    <header id="home" class="px-6 md:px-12 mt-4">
+        <div class="relative w-full h-[650px] overflow-hidden rounded-nike">
+            <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" class="w-full h-full object-cover brightness-50" alt="Stadium">
+            <div class="absolute inset-0 flex flex-col justify-center items-center text-center p-6">
+                <h2 class="text-sm uppercase tracking-[0.3em] mb-4">22/23 Authentic Collections</h2>
+                <h1 class="text-6xl md:text-8xl font-black italic uppercase tracking-tighter mb-6 leading-none">Gear Up Like <br>A Pro</h1>
+                <p class="text-lg max-w-xl mb-8 text-gray-300">Premium 22/23 Home Kits for Clubs and National Teams. High-quality fabric for the true fan.</p>
+                <div class="flex space-x-4">
+                    <a href="#shop" class="bg-white text-black px-8 py-3 rounded-full font-bold hover:bg-gray-200 transition">Shop All ৳350</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="shop" class="px-6 md:px-12 py-20">
+        <div class="flex justify-between items-end mb-10">
+            <h2 class="text-3xl font-bold uppercase italic">Popular 22/23 Kits</h2>
+            <p class="text-gray-400">All Jerseys ৳350</p>
+        </div>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="group">
+                <div class="relative overflow-hidden rounded-nike bg-[#111] aspect-[3/4]">
+                    <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/0827103282a543679c1bae7200fd7a0a_9366/Real_Madrid_22-23_Home_Jersey_White_HF0291_01_laydown.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Real Madrid 22/23">
+                    <button onclick="alert('Real Madrid Home Kit added!')" class="absolute bottom-4 right-4 bg-white text-black w-12 h-12 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition shadow-xl">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </div>
+                <div class="mt-4">
+                    <h3 class="font-bold">Real Madrid Home 22/23</h3>
+                    <p class="text-gray-500 text-sm">Official Club Kit</p>
+                    <p class="font-bold mt-1 text-yellow-500">৳350</p>
+                </div>
+            </div>
+
+            <div class="group">
+                <div class="relative overflow-hidden rounded-nike bg-[#111] aspect-[3/4]">
+                    <img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/28c19985-e63d-4c3d-9d7a-1158a5e0f7e6/FCB+M+NK+DF+STAD+JSY+SS+HM.png" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Barcelona 22/23">
+                    <button onclick="alert('Barcelona Home Kit added!')" class="absolute bottom-4 right-4 bg-white text-black w-12 h-12 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition shadow-xl">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </div>
+                <div class="mt-4">
+                    <h3 class="font-bold">FC Barcelona Home 22/23</h3>
+                    <p class="text-gray-500 text-sm">Official Club Kit</p>
+                    <p class="font-bold mt-1 text-yellow-500">৳350</p>
+                </div>
+            </div>
+
+            <div class="group">
+                <div class="relative overflow-hidden rounded-nike bg-[#111] aspect-[3/4]">
+                    <img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/76a14782-b529-4d69-a1b9-37f287e07672/CBF+M+NK+DF+STAD+JSY+SS+HM.png" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Brazil 22/23">
+                    <button onclick="alert('Brazil Home Kit added!')" class="absolute bottom-4 right-4 bg-white text-black w-12 h-12 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition shadow-xl">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </div>
+                <div class="mt-4">
+                    <h3 class="font-bold">Brazil Home 22/23</h3>
+                    <p class="text-gray-500 text-sm">National Team Kit</p>
+                    <p class="font-bold mt-1 text-yellow-500">৳350</p>
+                </div>
+            </div>
+
+            <div class="group">
+                <div class="relative overflow-hidden rounded-nike bg-[#111] aspect-[3/4]">
+                    <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/2083b052f36d4004909aae990098f99e_9366/Argentina_22_Home_Jersey_White_HF2158_01_laydown.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Argentina 22/23">
+                    <button onclick="alert('Argentina Home Kit added!')" class="absolute bottom-4 right-4 bg-white text-black w-12 h-12 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition shadow-xl">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </div>
+                <div class="mt-4">
+                    <h3 class="font-bold">Argentina Home 22/23</h3>
+                    <p class="text-gray-500 text-sm">National Team Kit</p>
+                    <p class="font-bold mt-1 text-yellow-500">৳350</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#111] text-white pt-16 pb-8 px-6 md:px-12 rounded-t-[40px]">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+            <div class="space-y-4">
+                <h4 class="font-black italic text-xl uppercase tracking-tighter">Athletica Wears</h4>
+                <p class="text-gray-500 text-sm">Your number one destination for premium football kits in Bangladesh.</p>
+            </div>
+            <div class="flex flex-col space-y-3 uppercase font-bold text-xs tracking-widest">
+                <a href="#" class="hover:text-gray-400">Order Status</a>
+                <a href="#" class="hover:text-gray-400">Shipping Policy</a>
+                <a href="#" class="hover:text-gray-400">Join Member</a>
+            </div>
+            <div class="flex flex-col space-y-3 text-gray-400 text-xs">
+                <h4 class="text-white font-bold mb-2">ABOUT US</h4>
+                <a href="#" class="hover:text-white">News</a>
+                <a href="#" class="hover:text-white">Sustainability</a>
+                <a href="#" class="hover:text-white">Careers</a>
+            </div>
+            <div class="flex space-x-4 justify-end">
+                <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-600 transition"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-600 transition"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="text-center text-[10px] text-gray-600 border-t border-gray-800 pt-8">
+            © 2026 ATHLETICA WEARS. ALL RIGHTS RESERVED.
+        </div>
+    </footer>
+
+</body>
+</html>
